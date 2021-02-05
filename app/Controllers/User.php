@@ -6,6 +6,10 @@ class User extends BaseController
 {
     public function index()
     {
-        return view('user/index');
+        //Title
+        $data['title'] = 'My Profile';
+
+        //View
+        return view('user/index', $data);
     }
 }
